@@ -12,6 +12,12 @@ export default function HomeScreen({ navigation }) {
       >
         <Text style={styles.buttonText}>Notification</Text>
       </TouchableOpacity>
+      <TouchableOpacity
+        style={styles.Filterbutton}
+        onPress={() => navigation.navigate('FilterScreen')}
+      >
+        <Text style={styles.buttonText}>Filter</Text>
+      </TouchableOpacity>
     </View>
   );
 }
@@ -33,6 +39,13 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
     paddingHorizontal: 24,
     borderRadius: 10,
+  },
+  Filterbutton: {
+    backgroundColor: '#007AFF',
+    paddingVertical: 12,
+    paddingHorizontal: 24,
+    borderRadius: 10,
+    marginTop: 20,
   },
   buttonText: {
     color: '#fff',
