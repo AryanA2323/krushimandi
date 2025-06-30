@@ -6,6 +6,7 @@ import HomeScreen from './src/screens/HomeScreen';
 import NotificationScreen from './src/screens/NotificationScreen';
 import NotificationDetail from './src/screens/NotificationDetail';
 import FilterScreen from './src/screens/FilterScreen';
+import ProfileScreen from './src/screens/ProfileScreen.jsx';
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -44,6 +45,16 @@ export default function App() {
             headerTintColor: '#fff',
           }}
         />
+        <Stack.Screen
+          name="ProfileScreen"
+          component={ProfileScreen}
+          options={{
+            title: 'ProfileScreen',
+            headerStyle: { backgroundColor: '#6DBE45' },
+            headerTintColor: '#fff',
+          }}
+        />
+
       </Stack.Navigator>
     </NavigationContainer>
   );
