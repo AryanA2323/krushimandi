@@ -25,6 +25,12 @@ export default function HomeScreen({ navigation }) {
       >
         <Text style={styles.buttonText}>Profile</Text>
       </TouchableOpacity>
+      <TouchableOpacity
+        style={styles.Helpbutton}
+        onPress={() => navigation.navigate('HelpScreen')}
+      >
+        <Text style={styles.buttonText}>Help</Text>
+      </TouchableOpacity>
     </View>
   );
 }
@@ -48,6 +54,13 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   Filterbutton: {
+    backgroundColor: '#007AFF',
+    paddingVertical: 12,
+    paddingHorizontal: 24,
+    borderRadius: 10,
+    marginTop: 20,
+  },
+  Helpbutton: {
     backgroundColor: '#007AFF',
     paddingVertical: 12,
     paddingHorizontal: 24,

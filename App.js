@@ -7,6 +7,10 @@ import NotificationScreen from './src/screens/NotificationScreen';
 import NotificationDetail from './src/screens/NotificationDetail';
 import FilterScreen from './src/screens/FilterScreen';
 import ProfileScreen from './src/screens/ProfileScreen.jsx';
+import HelpScreen from './src/screens/HelpScreen.jsx';
+import HelpGuide from './src/screens/HelpGuide.jsx';
+import FaqDetail from './src/screens/FaqDetail.jsx';
+
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -52,6 +56,36 @@ export default function App() {
             title: 'ProfileScreen',
             headerStyle: { backgroundColor: '#6DBE45' },
             headerTintColor: '#fff',
+          }}
+        />
+        <Stack.Screen
+          name="HelpScreen"
+          component={HelpScreen}
+          options={{
+            title: 'HelpScreen',
+            headerStyle: { backgroundColor: '#6DBE45' },
+            headerTintColor: '#fff',
+            headerShown: false
+          }}
+        />
+        <Stack.Screen
+          name="HelpGuide"
+          component={HelpGuide}
+          options={{
+            title: 'HelpGuide',
+            headerStyle: { backgroundColor: '#6DBE45' },
+            headerTintColor: '#fff',
+            headerShown: false
+          }}
+        />
+        <Stack.Screen
+          name="FaqDetail"
+          component={FaqDetail}
+          options={{
+            title: 'FAQ Detail',
+            headerStyle: { backgroundColor: '#6DBE45' },
+            headerTintColor: '#fff',
+            headerShown: false
           }}
         />
 
