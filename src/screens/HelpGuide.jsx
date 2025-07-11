@@ -205,28 +205,28 @@ const HelpGuideScreen = ({ route, navigation }) => {
       title: 'How to list Fruit?',
       content:
         'To list a fruit, \n\n1) Go to the "My Fruits" section, \n2) Tap the "+" icon,\n3) Enter product details like name, weight, price, and upload a photo. \n4) Then tap "List".',
-      image: require('./assets/guide.jpg'),
+      image: require('./assets/list.jpg'),
       category: 'List an Item',
     },
     {
       title: 'How to delete Listed Fruit?',
       content:
         'To delete listed fruit, \n\n1) Open the "My Fruits" section. \n2) Tap the three-dot menu next to the item you want to remove, then select "Delete". \n3) Confirm to remove the listing.',
-      image: require('./assets/guide.jpg'),
+      image: require('./assets/list.jpg'),
       category: 'Delete a listed Item',
     },
     {
       title: 'How App works?',
       content:
         'The app connects farmers and buyers directly. You list your crops, and buyers can view, negotiate, and order directly from you.',
-      image: require('./assets/guide.jpg'),
+      image: require('./assets/list.jpg'),
       category: 'Profile',
     },
     {
       title: 'How to manage Listed Fruit?',
       content:
         'To manage listed fruits, \n\n1) Go to "My Fruits" to edit quantity, price, or availability. \n2) You can also pause or update your listing anytime from this section.',
-      image: require('./assets/guide.jpg'),
+      image: require('./assets/list.jpg'),
       category: 'Manage listed Item',
     },
   ];
@@ -236,21 +236,21 @@ const HelpGuideScreen = ({ route, navigation }) => {
       title: 'How to Deal with listed fruits?',
       content:
         'To deal with listed fruits,\n\n1) go to the product details and click "Contact Seller" or "Place Order".\n2) You can chat or call the farmer directly.',
-      image: require('./assets/guide.jpg'),
+      image: require('./assets/list.jpg'),
       category: 'Buy an Item ',
     },
     {
       title: 'Filter usecase',
       content:
         'Use filters like location, price, fruit type, or freshness to quickly find the produce that best fits your requirements.',
-      image: require('./assets/guide.jpg'),
+      image: require('./assets/list.jpg'),
       category: 'Go to search',
     },
     {
       title: 'How to manage Fruits?',
       content:
         'To manage fruits, \n\n1) Go to your "Orders" or "Deals" section to track ongoing orders. \n2) You can also save or favorite specific listings for easy access.',
-      image: require('./assets/guide.jpg'),
+      image: require('./assets/list.jpg'),
       category: 'Manage your orders',
     },
   ];
@@ -309,13 +309,13 @@ const styles = StyleSheet.create({
     paddingTop: 54,
     paddingBottom: 18,
     paddingHorizontal: 22,
-    borderBottomLeftRadius: 30,
-    borderBottomRightRadius: 30,
+    // borderBottomLeftRadius: 30,
+    // borderBottomRightRadius: 30,
     marginBottom: 10,
     shadowColor: PRIMARY,
     shadowOpacity: 0.08,
     shadowRadius: 10,
-    elevation: 10,
+    // elevation: 10,
   },
   headerText: {
     color: TEXT_DARK,
